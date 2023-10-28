@@ -113,5 +113,6 @@ func _raspuns_drum(result, response_code, headers, body):
 		var new_coord = Vector2(coord[1]*64-64, coord[0]*64-64)
 		var gps = scn_gps.instance()
 		gps.set_position(new_coord)
+		gps.get_node("Sprite").set_frame(drum.CarId)
 		
 		add_child(gps)
