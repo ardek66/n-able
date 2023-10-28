@@ -24,6 +24,10 @@ config/name="nlab-ciup"
 run/main_scene="res://Root.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor]
 
 version_control_autoload_on_startup=true

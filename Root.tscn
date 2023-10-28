@@ -9,7 +9,8 @@
 [node name="Fundal" type="Node2D" parent="."]
 
 [node name="FundalSpr" type="Sprite" parent="Fundal"]
-scale = Vector2( 0.562037, 0.562037 )
+position = Vector2( -2, 3.00001 )
+scale = Vector2( 0.56, 0.56 )
 texture = ExtResource( 1 )
 centered = false
 
@@ -17,4 +18,8 @@ centered = false
 script = ExtResource( 3 )
 
 [node name="Masina" parent="." instance=ExtResource( 2 )]
-position = Vector2( 243, 156 )
+position = Vector2( 191, 125 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 6000, 4000 )
+own_world = true

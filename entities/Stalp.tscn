@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://textures/stalp.png" type="Texture" id=1]
+
+[node name="Stalp" type="Node2D"]
+
+[node name="StalpSpr" type="Sprite" parent="."]
+texture = ExtResource( 1 )
