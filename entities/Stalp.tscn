@@ -6,3 +6,5 @@
 
 [node name="StalpSpr" type="Sprite" parent="."]
 texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( -32, -64, 96, 32 )

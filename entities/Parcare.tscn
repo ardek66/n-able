@@ -4,7 +4,7 @@
 [ext_resource path="res://scripts/Parcare.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 64, 32 )
+extents = Vector2( 42, 32 )
 
 [node name="Parcare" type="Node2D"]
 scale = Vector2( 0.75, 0.75 )
@@ -13,9 +13,11 @@ script = ExtResource( 2 )
 [node name="ParcareSpr" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 82, 64 )
 
 [node name="ParcareArea" type="Area2D" parent="."]
 
-[node name="MasinaCol" type="CollisionShape2D" parent="ParcareArea"]
-position = Vector2( 64, 32 )
+[node name="ParcareCol" type="CollisionShape2D" parent="ParcareArea"]
+position = Vector2( 41.3333, 32 )
 shape = SubResource( 1 )
