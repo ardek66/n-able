@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://textures/fundal.png" type="Texture" id=1]
+[ext_resource path="res://entities/Masina.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/Parcari.gd" type="Script" id=3]
+
+[node name="Root" type="Node"]
+
+[node name="Fundal" type="Node2D" parent="."]
+
+[node name="FundalSpr" type="Sprite" parent="Fundal"]
+scale = Vector2( 0.562037, 0.562037 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Parcari" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Masina" parent="." instance=ExtResource( 2 )]
+position = Vector2( 243, 156 )
